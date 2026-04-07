@@ -136,8 +136,15 @@
         .target-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
         .target-card .role { font-size: 13px; color: #fe745c; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
         .target-card ul { list-style: none; }
-        .target-card ul li { font-size: 15px; color: #555; padding: 6px 0; border-bottom: 1px solid #f0f0f0; }
-        .target-card ul li::before { content: "✓ "; color: #fe745c; font-weight: 700; }
+        .target-card ul li {
+            font-size: 15px; color: #555; padding: 6px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex; align-items: flex-start; gap: 8px;
+        }
+        .target-card ul li::before {
+            content: "✓"; color: #fe745c; font-weight: 700;
+            flex-shrink: 0; margin-top: 1px;
+        }
 
         /* ========== VERGLEICH ========== */
         .vergleich { background: #fff; padding: 80px 24px; }
@@ -170,8 +177,12 @@
         .monat-details li {
             font-size: 13px; color: #555; padding: 4px 0;
             list-style: none; border-bottom: 1px solid #f5f5f5;
+            display: flex; align-items: flex-start; gap: 6px;
         }
-        .monat-details li::before { content: "→ "; color: #fe745c; }
+        .monat-details li::before {
+            content: "→"; color: #fe745c;
+            flex-shrink: 0; margin-top: 1px;
+        }
 
         /* ========== FOERDERUNG ========== */
         .foerderung { background: #1a2e4a; padding: 80px 24px; color: #fff; }
@@ -212,10 +223,8 @@
         .testimonial-card .quote {
             font-size: 16px; color: #333; line-height: 1.7;
             font-style: italic; margin-bottom: 24px;
-        }
-        .testimonial-card .quote::before {
-            content: "„"; font-size: 40px; font-weight: 800;
-            color: #fe745c; line-height: 0; display: block; margin-bottom: 12px;
+            border-left: 3px solid #fe745c;
+            padding-left: 16px;
         }
         .testimonial-author .name { font-size: 14px; font-weight: 700; color: #1a2e4a; }
         .testimonial-author .role { font-size: 12px; color: #999; }
@@ -364,10 +373,12 @@
         <h1>Sie wurden zur Führungskraft ernannt.<br><em>Ausgebildet wurde niemand.</em></h1>
         <p>„Pflege führt. Winterfest." ist das 6-monatige Führungstraining für Einrichtungs-, Pflege- und Hauswirtschaftsleitungen. Praxisnah. Direkt transferierbar. Vollständig förderbar.</p>
         <div class="hero-cta-group">
-            <a href="tel:094219617993" class="btn-primary">📞 09421 961 7993 – kostenlos anrufen</a>
+            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:10px;">
+                <a href="mailto:office@winterfest.academy" class="btn-primary" style="display:inline-flex; align-items:center; gap:10px;">✉️ office@winterfest.academy</a>
+                <span style="font-size:14px; color:#555; font-weight:500; padding-left:4px;">📞 <a href="tel:094219617993" style="color:#1a2e4a; text-decoration:none; font-weight:600;">09421 961 7993</a> – kostenlos anrufen</span>
+            </div>
             <a href="#programm" class="btn-secondary">Das Programm ansehen</a>
         </div>
-        <p class="hero-sub"><a href="mailto:office@winterfest.academy" style="color:#fe745c; text-decoration:none; font-weight:600;">✉️ office@winterfest.academy</a></p>
         <div class="hero-badges">
             <span class="hero-badge">🗓️ <strong>2 Tage / Monat</strong> · 6 Monate</span>
             <span class="hero-badge">👥 <strong>Max. 12</strong> Teilnehmende</span>
@@ -687,20 +698,20 @@
     <div class="container">
         <h2>Der erste Schritt ist ein Gespräch.<br>Kein Formular.</h2>
         <p>30 Minuten. Ehrlicher Austausch darüber, wo Ihre Leitungskräfte stehen – und was sie wirklich brauchen. Manchmal passt es. Manchmal nicht. Beides ist in Ordnung.</p>
-        <span class="cta-phone" style="cursor:default;">📞 09421 961 7993</span>
-        <p class="cta-email-line"><a href="mailto:office@winterfest.academy" style="background:rgba(255,255,255,0.15); padding:10px 24px; border-radius:6px; color:#fff; text-decoration:none; font-weight:600; display:inline-block; margin-top:8px;">✉️ office@winterfest.academy</a></p>
+        <a href="tel:094219617993" class="cta-phone">📞 09421 961 7993 anrufen</a>
+        <p class="cta-email-line">Oder schreiben Sie uns: <a href="mailto:office@winterfest.academy" style="background:rgba(255,255,255,0.15); padding:8px 20px; border-radius:6px; color:#fff; text-decoration:none; font-weight:600;">✉️ office@winterfest.academy</a></p>
         <p class="cta-standorte">Straubing · München · Training auch direkt in Ihrer Einrichtung möglich</p>
-        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirkung.</p>
+        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirksamkeit.</p>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
     <div class="footer-links">
-        <a href="https://www.winterfest.academy" target="_blank" rel="noopener">winterfest.academy</a>
+        <a href="https://www.winterfest.academy">winterfest.academy</a>
         <a href="mailto:office@winterfest.academy">Kontakt</a>
-        <a href="https://www.winterfest.academy/impressum" target="_blank" rel="noopener">Impressum</a>
-        <a href="https://www.winterfest.academy/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
     </div>
     <p>© 2026 WINTERFEST Leadership Academy · Rainer Winter · Regensburger Str. 79, 94315 Straubing</p>
 </footer>
