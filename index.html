@@ -276,6 +276,8 @@
         }
         .final-cta h2 { font-size: 40px; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
         .final-cta p { font-size: 18px; color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto 40px; line-height: 1.7; }
+        .final-cta .btn-primary { background: #fe745c; }
+        .final-cta .btn-primary:hover { background: #e55d45; }
         .cta-phone {
             display: inline-block; background: #fe745c; color: #fff;
             padding: 18px 48px; font-size: 18px; font-weight: 700;
@@ -698,10 +700,12 @@
     <div class="container">
         <h2>Der erste Schritt ist ein Gespräch.<br>Kein Formular.</h2>
         <p>30 Minuten. Ehrlicher Austausch darüber, wo Ihre Leitungskräfte stehen – und was sie wirklich brauchen. Manchmal passt es. Manchmal nicht. Beides ist in Ordnung.</p>
-        <a href="tel:094219617993" class="cta-phone">📞 09421 961 7993 anrufen</a>
-        <p class="cta-email-line">Oder schreiben Sie uns: <a href="mailto:office@winterfest.academy" style="background:rgba(255,255,255,0.15); padding:8px 20px; border-radius:6px; color:#fff; text-decoration:none; font-weight:600;">✉️ office@winterfest.academy</a></p>
-        <p class="cta-standorte">Straubing · München · Training auch direkt in Ihrer Einrichtung möglich</p>
-        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirksamkeit.</p>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:10px;">
+            <a href="mailto:office@winterfest.academy" class="btn-primary" style="display:inline-flex; align-items:center; gap:10px; white-space:nowrap;">✉️ office@winterfest.academy</a>
+            <span style="font-size:14px; color:rgba(255,255,255,0.7); font-weight:500;">📞 <a href="tel:094219617993" style="color:#fff; text-decoration:none; font-weight:600;">09421 961 7993</a> – kostenlos anrufen</span>
+        </div>
+        <p class="cta-standorte" style="margin-top:24px;">Straubing · München · Training auch direkt in Ihrer Einrichtung möglich</p>
+        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirkung.</p>
     </div>
 </section>
 
