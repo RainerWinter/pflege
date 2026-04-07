@@ -51,7 +51,7 @@
             font-size: 36px; font-weight: 800; line-height: 1.2;
             margin-bottom: 16px; max-width: 700px;
         }
-        .section-subtitle { font-size: 18px; color: #666; max-width: 600px; line-height: 1.7; }
+        .section-subtitle { font-size: 18px; color: #666; max-width: 800px; line-height: 1.7; }
 
         /* ========== HERO ========== */
         .hero {
@@ -317,7 +317,7 @@
             .hero h1 { font-size: 32px; }
             .hero > .container > p { font-size: 16px; }
             .recognition-grid { grid-template-columns: 1fr; }
-            .target-inner { grid-template-columns: 1fr; }
+            .target-inner { grid-template-columns: 1fr !important; }
             .monate-grid { grid-template-columns: 1fr; }
             .foerder-steps { grid-template-columns: 1fr 1fr; }
             .testimonial-grid { grid-template-columns: 1fr; }
@@ -337,13 +337,13 @@
 <!-- NAV -->
 <nav>
     <div class="nav-inner">
-        <a href="#" class="logo">PFLEGE FÜHRT.<br><span>WINTERFEST.</span></a>
+        <a href="#" class="logo"><img src="Winterfest-Leadership-Academy-2-g.png" alt="WINTERFEST Leadership Academy" style="height:36px; width:auto; display:block;"></a>
         <ul class="nav-links">
             <li><a href="#programm">Das Programm</a></li>
             <li><a href="#foerderung">Förderung</a></li>
             <li><a href="#referenzen">Referenzen</a></li>
             <li><a href="#trainer">Trainer</a></li>
-            <li><a href="#kontakt" class="nav-cta">Jetzt anrufen</a></li>
+            <li><a href="tel:094219617993" class="nav-cta">📞 09421 961 7993</a></li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
             <span class="hamburger"></span>
@@ -359,19 +359,20 @@
 <!-- HERO -->
 <section class="hero">
     <div class="container">
+        <p class="section-label" style="font-size:18px; letter-spacing:1px; text-transform:none; font-weight:800; color:#1a2e4a; margin-bottom:8px;">Pflege führt. <span style="color:#fe745c;">winterfest.</span></p>
         <p class="section-label">Führungskräftefortbildung für Pflegeeinrichtungen in Bayern</p>
         <h1>Sie wurden zur Führungskraft ernannt.<br><em>Ausgebildet wurde niemand.</em></h1>
         <p>„Pflege führt. Winterfest." ist das 6-monatige Führungstraining für Einrichtungs-, Pflege- und Hauswirtschaftsleitungen. Praxisnah. Direkt transferierbar. Vollständig förderbar.</p>
         <div class="hero-cta-group">
-            <a href="tel:094219617993" class="btn-primary">📞 Jetzt anrufen – kostenlos &amp; unverbindlich</a>
+            <a href="tel:094219617993" class="btn-primary">📞 09421 961 7993 – kostenlos anrufen</a>
             <a href="#programm" class="btn-secondary">Das Programm ansehen</a>
         </div>
-        <p class="hero-sub">Rainer Winter · 09421 961 7993 · office@winterfest.academy</p>
+        <p class="hero-sub"><a href="mailto:office@winterfest.academy" style="color:#fe745c; text-decoration:none; font-weight:600;">✉️ office@winterfest.academy</a></p>
         <div class="hero-badges">
             <span class="hero-badge">🗓️ <strong>2 Tage / Monat</strong> · 6 Monate</span>
             <span class="hero-badge">👥 <strong>Max. 12</strong> Teilnehmende</span>
             <span class="hero-badge">📍 <strong>Straubing, München</strong> oder bei Ihnen</span>
-            <span class="hero-badge">💶 <strong>5.000 €</strong> pro Führungskraft</span>
+            <span class="hero-badge">💶 <strong>5.000 €</strong> pro Führungskraft – <strong style="color:#fe745c;">vollständig förderbar</strong></span>
         </div>
     </div>
 </section>
@@ -391,11 +392,11 @@
                 <p>Konflikte im Team schwelen seit Wochen. Sie wissen, dass Sie etwas sagen müssten. Aber wann? Und wie – ohne alles zu eskalieren?</p>
             </div>
             <div class="recognition-item">
-                <p>Abends fragen Sie sich: Habe ich heute eigentlich geführt? Oder nur verwaltet, ausgeholfen und Brände gelöscht?</p>
+                <p>Abends fragen Sie sich: Bin ich heute eigentlich meiner Führungsrolle gerecht geworden? Oder habe ich nur verwaltet, ausgeholfen und Brände gelöscht?</p>
             </div>
         </div>
         <div class="recognition-bridge">
-            <p>Das ist kein persönliches Versagen. Das ist ein <strong>systemisches Problem</strong>: Pflegeausbildungen vermitteln Pflegekompetenz. Führungskompetenz ist kein Bestandteil. <strong>Das ist der Unterschied, den wir schließen.</strong></p>
+            <p>Das ist kein persönliches Versagen. <strong>Das ist ein strukturelles Problem:</strong> Pflegeausbildungen machen exzellente Pflegefachkräfte – aber keine Führungskräfte. Führungskompetenz ist kein Bestandteil. <strong>Genau diese Lücke schließen wir.</strong></p>
         </div>
     </div>
 </section>
@@ -404,8 +405,8 @@
 <section class="target" id="fuerwen">
     <div class="container">
         <p class="section-label">Für wen</p>
-        <h2 class="section-title">Zwei Rollen. Eine Herausforderung.</h2>
-        <div class="target-inner">
+        <h2 class="section-title">Drei Rollen. Eine Herausforderung.</h2>
+        <div class="target-inner" style="grid-template-columns: repeat(3, 1fr);">
             <div class="target-card">
                 <h3>Die Einrichtungsleitung</h3>
                 <p class="role">Einrichtungsleitung · Heimleitung · Geschäftsführung</p>
@@ -418,12 +419,22 @@
             </div>
             <div class="target-card">
                 <h3>Die Pflegedienstleitung</h3>
-                <p class="role">PDL · Hauswirtschaftsleitung · Stellv. Leitung</p>
+                <p class="role">PDL · Stellvertretende Leitung</p>
                 <ul>
                     <li>Führt 20–30 Menschen, von denen sie täglich vielleicht 8 sieht</li>
                     <li>Wurde ernannt – nicht ausgebildet</li>
                     <li>Springt selbst ein, wenn Not am Mann ist – und verliert dabei die Führungsrolle</li>
                     <li>Will endlich wissen: Was bedeutet Führung – und wie geht das konkret?</li>
+                </ul>
+            </div>
+            <div class="target-card">
+                <h3>Die Hauswirtschaftsleitung</h3>
+                <p class="role">Hauswirtschaftsleitung · Bereichsleitung Hauswirtschaft</p>
+                <ul>
+                    <li>Führt ein Team, das oft im Hintergrund arbeitet – aber täglich sichtbar ist</li>
+                    <li>Trägt Verantwortung für Qualität, Hygiene und Teamklima</li>
+                    <li>Wurde selten auf Führung vorbereitet – und bekommt selten Führungsentwicklung angeboten</li>
+                    <li>Will als Führungskraft ernst genommen werden – und führen, nicht nur koordinieren</li>
                 </ul>
             </div>
         </div>
@@ -464,7 +475,7 @@
             <div class="vergleich-row">
                 <div class="vergleich-cell">Kontext</div>
                 <div class="vergleich-cell">Branchenintern</div>
-                <div class="vergleich-cell">Bewährt im Mittelstand, übersetzt für Pflege</div>
+                <div class="vergleich-cell">Bewährt im Mittelstand, übersetzt für Pflege – plus externe Impulse, die über brancheninterne Perspektiven hinausgehen</div>
             </div>
         </div>
     </div>
@@ -480,7 +491,7 @@
             <div class="monat-card">
                 <p class="monat-num">Monat 1</p>
                 <h3>Fundament &amp; Haltung</h3>
-                <p>Wer bin ich als Führungskraft – und was muss ich loslassen?</p>
+                <p>Leitungsposition in der Pflege – was bedeutet das wirklich für mich?</p>
                 <ul class="monat-details">
                     <li>Leadership Mindset: Von der Pflegefachkraft zur Führungskraft</li>
                     <li>Selbstführung als Voraussetzung für Teamführung</li>
@@ -505,7 +516,7 @@
                 <p>Raus aus dem Operativen – rein in die Führung.</p>
                 <ul class="monat-details">
                     <li>Zeit und Prioritäten als Führungsaufgabe</li>
-                    <li>Delegation: Was ich abgeben muss</li>
+                    <li>Delegation: Was ich abgeben sollte</li>
                     <li>Entscheidungen treffen unter Druck</li>
                     <li>Der wöchentliche Führungsrhythmus</li>
                 </ul>
@@ -645,7 +656,7 @@
                 <p>Psychologe, Sparringspartner, strategischer Denker. Michael geht dahin, wo es unbequem wird – mit Empathie und der nötigen Hartnäckigkeit.</p>
                 <p>Sein Fokus: Selbstführung, Resilienz und innere Klarheit. Was unter der Oberfläche liegt, entscheidet über Wirkung.</p>
                 <div>
-                    <span class="trainer-stat">~150 Resilienztrainings in Pflegeheimen</span>
+                    <span class="trainer-stat">~100 Resilienztrainings in Pflegeheimen</span>
                     <span class="trainer-stat">Resilienz &amp; innere Klarheit</span>
                 </div>
                 <div class="trainer-contact">
@@ -676,20 +687,20 @@
     <div class="container">
         <h2>Der erste Schritt ist ein Gespräch.<br>Kein Formular.</h2>
         <p>30 Minuten. Ehrlicher Austausch darüber, wo Ihre Leitungskräfte stehen – und was sie wirklich brauchen. Manchmal passt es. Manchmal nicht. Beides ist in Ordnung.</p>
-        <a href="tel:094219617993" class="cta-phone">📞 09421 961 7993 · Rainer Winter</a>
-        <p class="cta-email-line">Oder schreiben Sie uns: <a href="mailto:office@winterfest.academy">office@winterfest.academy</a></p>
+        <span class="cta-phone" style="cursor:default;">📞 09421 961 7993</span>
+        <p class="cta-email-line"><a href="mailto:office@winterfest.academy" style="background:rgba(255,255,255,0.15); padding:10px 24px; border-radius:6px; color:#fff; text-decoration:none; font-weight:600; display:inline-block; margin-top:8px;">✉️ office@winterfest.academy</a></p>
         <p class="cta-standorte">Straubing · München · Training auch direkt in Ihrer Einrichtung möglich</p>
-        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirksamkeit.</p>
+        <p class="cta-standorte" style="margin-top:8px;">Führung. Haltung. Wirkung.</p>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
     <div class="footer-links">
-        <a href="https://www.winterfest.academy">winterfest.academy</a>
+        <a href="https://www.winterfest.academy" target="_blank" rel="noopener">winterfest.academy</a>
         <a href="mailto:office@winterfest.academy">Kontakt</a>
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
+        <a href="https://www.winterfest.academy/impressum" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://www.winterfest.academy/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
     </div>
     <p>© 2026 WINTERFEST Leadership Academy · Rainer Winter · Regensburger Str. 79, 94315 Straubing</p>
 </footer>
