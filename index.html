@@ -357,22 +357,45 @@
 
             /* === VERGLEICH TABELLE === */
             .vergleich-table {
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                display: block;
                 max-width: 100%;
+                overflow: hidden;
             }
             .vergleich-row {
                 display: grid;
-                grid-template-columns: 70px 1fr 1fr;
-                font-size: 11px;
+                grid-template-columns: 80px 1fr;
+                font-size: 13px;
             }
             .vergleich-row.header {
-                grid-template-columns: 70px 1fr 1fr;
+                grid-template-columns: 80px 1fr;
             }
-            .vergleich-cell {
-                padding: 10px 6px;
-                word-break: break-word;
+            /* Hide middle column (Klassische Pflegefortbildung) on mobile */
+            .vergleich-cell:nth-child(2) {
+                display: none;
+            }
+            .vergleich-row.header .vergleich-cell:nth-child(2) {
+                display: none;
+            }
+            /* First cell = label column */
+            .vergleich-cell:nth-child(1) {
+                font-size: 11px;
+                color: #888;
+                font-weight: 600;
+                padding: 12px 8px;
+            }
+            /* Third cell = Pflege führt column */
+            .vergleich-cell:nth-child(3) {
+                padding: 12px 10px;
+                word-break: normal;
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+            /* Header: first cell empty, third = title */
+            .vergleich-row.header .vergleich-cell:nth-child(1) {
+                display: none;
+            }
+            .vergleich-row.header .vergleich-cell:nth-child(3) {
+                grid-column: 1 / -1;
+                font-size: 14px;
             }
 
             /* === GRIDS === */
@@ -539,7 +562,7 @@
             <div class="vergleich-row">
                 <div class="vergleich-cell">Kontext</div>
                 <div class="vergleich-cell">Branchenintern</div>
-                <div class="vergleich-cell">Bewährt im Mittelstand, übersetzt für Pflege – plus externe Impulse, die über brancheninterne Perspektiven hinausgehen</div>
+                <div class="vergleich-cell">Bewährt im Mittelstand, übersetzt für Pflege – mit Impulsen über die Branche hinaus</div>
             </div>
         </div>
     </div>
